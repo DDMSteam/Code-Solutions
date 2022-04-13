@@ -16,8 +16,8 @@ public class Solution {
 }
 
 //version 2
-// [2,11,15,7]
-//  p1,p2   <-- initialize position in the array
+// [ 2, 11, 15, 7]
+//  p1, p2 <-- initialize position in the array
 
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {             

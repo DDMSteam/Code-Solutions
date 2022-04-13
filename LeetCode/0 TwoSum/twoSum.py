@@ -16,8 +16,8 @@ class Solution:
                 if  nums[p1] + nums[p2] == target: #2 + 7 = 9 compare the values of the both pointers current position in the for loop and check if the both add up to the target value
                     return [p1, p2] #return the current indices of p1 and p2 
 
-# [ 2, 7, 11, 1]
-#  p1,p2   <-- initialize position in the array
+# [ 2, 11, 15, 7]
+#  p1, p2   <-- initialize position in the array
 
 #nums = [2,7,11,15]
 nums = [2,11,15,7]
