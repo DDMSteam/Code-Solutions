@@ -16,6 +16,7 @@ class Solution:
                 if  nums[p1] + nums[p2] == target: #2 + 7 = 9 compare the values of the both pointers current position in the for loop and check if the both add up to the target value
                     return [p1, p2] #return the current indices of p1 and p2 
 
+
 # [ 2, 11, 15, 7]
 #  p1, p2   <-- initialize position in the array
 
@@ -25,3 +26,6 @@ target = 9
 s = Solution()
 answer = s.twoSum(nums, target)
 print(answer)
+
+#Time complexity is O(n²) because of two nested for loops. 
+#space complexity is O(1) because the space required does not depend on the size of the input array, so only constant time is used. 

@@ -34,3 +34,4 @@ public class Solution {
 }
 
 //Time complexity is O(n²) because of two nested for loops. 
+//space complexity is O(1) because the space required does not depend on the size of the input array, so only constant time is used.
