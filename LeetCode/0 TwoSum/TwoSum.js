@@ -1,6 +1,7 @@
 //https://leetcode.com/problems/two-sum/discuss/1940550/Javascript-69MS-with-Hashmap-EXPLAINED-Faster-than-90
 //Hash map approach
 
+//version with comments
 var twoSum = function(nums, target) {
     // create a new Map
     let map = new Map();
@@ -26,3 +27,21 @@ var twoSum = function(nums, target) {
     return [];
 };
   
+//version without comments
+var twoSum = function(nums, target) {
+
+    let map = new Map();
+
+    for (var i = 0; i < nums.length; i++) {
+        let compliment = target - nums[i];
+        if ( map.has(compliment)) 
+        {
+           return [map.get(compliment), i];
+        } 
+        else 
+        {
+            map.set( nums[i] , i)
+        }
+    }
+    return [];
+};
