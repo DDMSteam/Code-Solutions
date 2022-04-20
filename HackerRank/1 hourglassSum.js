@@ -1,4 +1,5 @@
 // https://www.hackerrank.com/challenges/2d-array/problem?isFullScreen=true
+
 const arrOne = [[-9, -9, -9,  1, 1, 1],  
                 [ 0, -9,  0,  4, 3, 2], 
                 [-9, -9, -9,  1, 2, 3], 
@@ -9,11 +10,11 @@ const arrOne = [[-9, -9, -9,  1, 1, 1],
             //   -10,   0, 28, 23, 
             //   -27, -11, -2, 10, 
             //     9,  17, 25, 18
-​
+
 function getsum (arr) {
-​
+
     let sums = [];
-​
+
     for (let i = 0; i < 4; i++) {
         // [-9, -9, -9,  1, 1, 1]
         for (let x = 0; x < 4; x++) {
@@ -28,5 +29,5 @@ function getsum (arr) {
     };
     return Math.max(...sums);
 };
-​
+
 console.log(getsum(arrOne));
